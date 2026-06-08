@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query - CSS</title>
+    <!-- Internal CSS -->
+    <style>
+        /* min = minimum */
+        /* max = maximum */
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightcoral;
+            padding: 12px 18px;
+        }
+        .container {
+            display: flex;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 4px;
+        }
+        @media (min-width: 300px) and (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                flex-direction: column;
+            }
+            .box {
+                background-color: red;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: lightcoral;
+            padding: 12px 18px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+        }
+
+        @media (max-width: 350px) {
+            button {
+                display: none;
+            }
+
+            h1 {
+                font-size: 16px;
+            }
+        }
+
+        /* height > width */
+        @media (orientation: portrait) {
+            body {
+                background-color: yellow;
+            }
+            p {
+                text-align: center;
+            }
+        }
+        /* width > height */
+        @media screen and (orientation: landscape) {
+            body {
+                background-color: orange;
+            }
+        }
+
+        img {
+            width: 300px;
+            height: 210px;
+        }
+
+        p {
+            float: left;
+        }
+
+        img {
+            float: right;
+            clear: both;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- flex is one dimension -->
+    <!-- <div class="container">
+        <div class="box">Box One</div>
+        <div class="box">Box Two</div>
+        <div class="box">Box Three</div>
+        <div class="box">Box Four</div>
+        <div class="box">Box Five</div>
+    </div> -->
+
+    <!-- grid is two dimension -->
+    <!-- <div class="grid-container">
+        <div class="box">1st</div>
+        <div class="box">2nd</div>
+        <div class="box">3rd</div>
+        <div class="box">4th</div>
+        <div class="box">5th</div>
+    </div> -->
+
+    <nav class="navbar">
+        <h1>Logo</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+        <button>Login</button>
+    </nav>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis assumenda exercitationem quaerat, earum voluptatem laborum quidem fugiat nulla ut perspiciatis! Non velit facere excepturi reprehenderit deleniti odit tempore delectus numquam!</p>
+    <img src="https://img.freepik.com/free-photo/landscape-spring-field-with-wheat-sprouts-bright-blue-sky-with-cumulus-clouds-early-spring_166373-8535.jpg?semt=ais_hybrid&w=740&q=80" alt="this is image" />
+    
+
+    
+    
+</body>
+</html>

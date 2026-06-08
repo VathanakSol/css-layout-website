@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul li {
+    display: inline;
+    padding: 8px 16px;
+    background: rgb(54, 54, 204);
+}
+
+a {
+    color: rgb(16, 196, 190);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, ul {
+    display: inline;
+    margin: 20px;
+}
+
+.box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    width: 200px;
+    height: 200px;
+    background: yellow;
+}
+
+.inner-box {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: red; 
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 20px;
+    width: 270px;
+    height: 320px;
+    background: lightblue;
+    border-radius: 16px;
+}
+
+.card p {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    padding: 8px 16px;
+    background: black;
+    color: white;
+    width: 75px;
+    border-radius: 16px;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 100px;
+    height: 75px;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+}
+
+.banner {
+    position: sticky;
+    top: 25px;
+}
+
+/* .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: purple;
+    padding: 20px;
+}
+
+.item {
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+} */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    width: 320px;
+    height: 250px;
+    padding: 4px;
+}
+
+.cards h1 {
+   color: red;
+   text-align: center;
+}
+
+.cards p {
+    color: black;
+    text-align: center;
+}
+
+.cards a {
+    background: rgb(64, 64, 171);
+    color: white;
+    padding: 8px 16px;
+}
+
+.card-layout {
+    display: flex;
+    gap: 0.5rem;
+    margin: 24px;
+}
+
+.grid-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    background: red;
+}
+
+
+

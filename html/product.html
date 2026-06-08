@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: red;
+            border: 1px solid black;
+            padding: 1rem;
+            margin: 24px;
+        }
+        .container {
+           display: grid;
+           /* grid-template-columns: 1fr 1fr 1fr; */
+           /* grid-template-columns: repeat(6, 1fr); */
+           /* grid-template-columns: 100px 200px 300px; */
+           /* grid-template-columns: repeat(3, 100px); */
+           /* grid-template-columns: 100px 200px 1fr;  */
+           grid-template-columns: 1fr 2fr 1fr;
+           grid-template-rows: 100px 1fr;
+           gap: 2rem;  
+           height: 50vh;
+        }
+        .box {
+            /* width: 100px; */
+            /* height: 100px; */
+            background-color: #CC8F2B;
+        }
+        .web-layout {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 100px 1fr;
+            height: 50vh;
+            gap: 4px;
+        }
+        .logo, .content, .footer, .navbar, .profile {
+            background-color: #333;
+            color: white;
+        }
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Grid System</h1>
+
+    <!-- Grid System -->
+    <div class="container">
+        <div class="box">one</div>
+        <div class="box">two</div>
+        <div class="box">three</div>
+        <div class="box">four</div>
+        <div class="box">five</div>
+        <div class="box">Six</div>
+    </div>
+
+    <!-- Website Structure Layout -->
+    <!-- <div class="web-layout">
+        <div class="logo">logo</div>
+        <div class="navbar">navbar</div>
+        <div class="profile">profile</div>
+        <div class="content">content</div>
+        <div class="footer">footer</div>
+    </div> -->
+
+</body>
+</html>
